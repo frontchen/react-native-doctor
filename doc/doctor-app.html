@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>doctor-app.md—E:\code\magic\doc</title>
+    <style type="text/css">
+    body{font-family:Helvetica,arial,sans-serif;font-size:14px;line-height:1.6;padding-top:10px;padding-bottom:10px;background-color:white;padding:30px;color:#333}body>*:first-child{margin-top:0!important}body>*:last-child{margin-bottom:0!important}a{color:#4183c4;text-decoration:none}a:hover{text-decoration:underline}a.absent{color:#c00}a.anchor{display:block;padding-left:30px;margin-left:-30px;cursor:pointer;position:absolute;top:0;left:0;bottom:0}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0}kbd{background:#f1f1f1;background:-moz-linear-gradient(#f1f1f1,#ddd);background:-webkit-linear-gradient(#f1f1f1,#ddd);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#dddddd')";border-radius:2px;border:1px solid #ddd;border-bottom-color:#ccc;border-right-color:#ccc;padding:1px 4px;line-height:10px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.container{max-width:920px;margin:0 auto 20px auto}#header{background:#fafafa;background:-moz-linear-gradient(#fafafa,#eaeaea);background:-webkit-linear-gradient(#fafafa,#eaeaea);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eaeaea')";border-bottom:1px solid #cacaca;box-shadow:0 1px 0 rgba(255,255,255,0.4),0 0 10px rgba(0,0,0,0.1)}#markup{padding:3px}#markup article{padding-top:30px}.markdown-body{font-size:14px;line-height:1.6}.markdown-body>*:first-child{margin-top:0!important}.markdown-body>*:last-child{margin-bottom:0!important}.markdown-body a.absent{color:#c00}.markdown-body a.anchor{bottom:0;cursor:pointer;display:block;left:0;margin-left:-30px;padding-left:30px;position:absolute;top:0}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{cursor:text;font-weight:bold;margin:20px 0 10px;padding:0;position:relative}.markdown-body h1 .mini-icon-link,.markdown-body h2 .mini-icon-link,.markdown-body h3 .mini-icon-link,.markdown-body h4 .mini-icon-link,.markdown-body h5 .mini-icon-link,.markdown-body h6 .mini-icon-link{color:#000;display:none}.markdown-body h1:hover a.anchor,.markdown-body h2:hover a.anchor,.markdown-body h3:hover a.anchor,.markdown-body h4:hover a.anchor,.markdown-body h5:hover a.anchor,.markdown-body h6:hover a.anchor{line-height:1;margin-left:-22px;padding-left:0;text-decoration:none;top:15%}.markdown-body h1:hover a.anchor .mini-icon-link,.markdown-body h2:hover a.anchor .mini-icon-link,.markdown-body h3:hover a.anchor .mini-icon-link,.markdown-body h4:hover a.anchor .mini-icon-link,.markdown-body h5:hover a.anchor .mini-icon-link,.markdown-body h6:hover a.anchor .mini-icon-link{display:inline-block}.markdown-body h1 tt,.markdown-body h1 code,.markdown-body h2 tt,.markdown-body h2 code,.markdown-body h3 tt,.markdown-body h3 code,.markdown-body h4 tt,.markdown-body h4 code,.markdown-body h5 tt,.markdown-body h5 code,.markdown-body h6 tt,.markdown-body h6 code{font-size:inherit}.markdown-body h1{color:#000;font-size:28px}.markdown-body h2{border-bottom:1px solid #ccc;color:#000;font-size:24px}.markdown-body h3{font-size:18px}.markdown-body h4{font-size:16px}.markdown-body h5{font-size:14px}.markdown-body h6{color:#777;font-size:14px}.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre{margin:15px 0}.markdown-body hr{background:url("/public/github-dirty-shade.png") repeat-x scroll 0 0 transparent;border:0 none;color:#ccc;height:4px;padding:0}.markdown-body>h2:first-child,.markdown-body>h1:first-child,.markdown-body>h1:first-child+h2,.markdown-body>h3:first-child,.markdown-body>h4:first-child,.markdown-body>h5:first-child,.markdown-body>h6:first-child{margin-top:0;padding-top:0}.markdown-body a:first-child h1,.markdown-body a:first-child h2,.markdown-body a:first-child h3,.markdown-body a:first-child h4,.markdown-body a:first-child h5,.markdown-body a:first-child h6{margin-top:0;padding-top:0}.markdown-body h1+p,.markdown-body h2+p,.markdown-body h3+p,.markdown-body h4+p,.markdown-body h5+p,.markdown-body h6+p{margin-top:0}.markdown-body li p.first{display:inline-block}.markdown-body ul,.markdown-body ol{padding-left:30px}.markdown-body ul.no-list,.markdown-body ol.no-list{list-style-type:none;padding:0}.markdown-body ul li>*:first-child,.markdown-body ol li>*:first-child{margin-top:0}.markdown-body ul ul,.markdown-body ul ol,.markdown-body ol ol,.markdown-body ol ul{margin-bottom:0}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:bold;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dt>*:first-child{margin-top:0}.markdown-body dl dt>*:last-child{margin-bottom:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body dl dd>*:first-child{margin-top:0}.markdown-body dl dd>*:last-child{margin-bottom:0}.markdown-body blockquote{border-left:4px solid #05a5d1;border-radius:4px;color:#333;padding:0 15px;background-color: rgba(5, 165, 209, 0.05);}.markdown-body blockquote p {word-wrap: break-word;}.markdown-body blockquote>*:first-child{margin-top:0}.markdown-body blockquote>*:last-child{margin-bottom:0}.markdown-body table{border-collapse:collapse;border-spacing:0}.markdown-body table th{font-weight:bold}.markdown-body table th,.markdown-body table td{border:1px solid #ccc;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#f8f8f8;border:1px solid #eaeaea;border-radius:3px 3px 3px 3px;margin:0 2px;padding:0 5px;white-space:nowrap}.markdown-body pre>code{background:none repeat scroll 0 0 transparent;border:medium none;margin:0;padding:0;white-space:pre}.markdown-body .highlight pre,.markdown-body pre{background-color:#f8f8f8;border:1px solid #ccc;border-radius:3px 3px 3px 3px;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;white-space: normal;}.markdown-body pre code,.markdown-body pre tt{background-color:transparent;border:medium none}.markdown-body kbd {display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background:#fcfcfc;border:solid 1px #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;}.codehilite{background:#fff}.codehilite .c{color:#998;font-style:italic}.codehilite .err{color:#a61717;background-color:#e3d2d2}.codehilite .k{color:#000;font-weight:bold}.codehilite .o{color:#000;font-weight:bold}.codehilite .cm{color:#998;font-style:italic}.codehilite .cp{color:#999;font-weight:bold}.codehilite .c1{color:#998;font-style:italic}.codehilite .cs{color:#999;font-weight:bold;font-style:italic}.codehilite .gd{color:#000;background-color:#fdd}.codehilite .gd .x{color:#000;background-color:#faa}.codehilite .ge{color:#000;font-style:italic}.codehilite .gr{color:#a00}.codehilite .gh{color:#999}.codehilite .gi{color:#000;background-color:#dfd}.codehilite .gi .x{color:#000;background-color:#afa}.codehilite .go{color:#888}.codehilite .gp{color:#555}.codehilite .gs{font-weight:bold}.codehilite .gu{color:#aaa}.codehilite .gt{color:#a00}.codehilite .kc{color:#000;font-weight:bold}.codehilite .kd{color:#000;font-weight:bold}.codehilite .kp{color:#000;font-weight:bold}.codehilite .kr{color:#000;font-weight:bold}.codehilite .kt{color:#458;font-weight:bold}.codehilite .m{color:#099}.codehilite .s{color:#d14}.codehilite .na{color:#008080}.codehilite .nb{color:#0086b3}.codehilite .nc{color:#458;font-weight:bold}.codehilite .no{color:#008080}.codehilite .ni{color:#800080}.codehilite .ne{color:#900;font-weight:bold}.codehilite .nf{color:#900;font-weight:bold}.codehilite .nn{color:#555}.codehilite .nt{color:#000080}.codehilite .nv{color:#008080}.codehilite .ow{color:#000;font-weight:bold}.codehilite .w{color:#bbb}.codehilite .mf{color:#099}.codehilite .mh{color:#099}.codehilite .mi{color:#099}.codehilite .mo{color:#099}.codehilite .sb{color:#d14}.codehilite .sc{color:#d14}.codehilite .sd{color:#d14}.codehilite .s2{color:#d14}.codehilite .se{color:#d14}.codehilite .sh{color:#d14}.codehilite .si{color:#d14}.codehilite .sx{color:#d14}.codehilite .sr{color:#009926}.codehilite .s1{color:#d14}.codehilite .ss{color:#990073}.codehilite .bp{color:#999}.codehilite .vc{color:#008080}.codehilite .vg{color:#008080}.codehilite .vi{color:#008080}.codehilite .il{color:#099}
+    </style>
+    <style type="text/css">
+      .markdown-body hr{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC")}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="markup">
+        <article id="content" class="markdown-body">
+          <h2>医生端APP</h2>
+<h3>一、系统所需组件</h3>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>组件名</th>
+<th>地址</th>
+<th>版本</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>路由</td>
+<td>react-navigation</td>
+<td><a href="https://github.com/react-navigation/react-navigation">https://github.com/react-navigation/react-navigation</a></td>
+<td>v1.5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>热更新</td>
+<td>react-native-code-push</td>
+<td><a href="https://github.com/Microsoft/react-native-code-push">https://github.com/Microsoft/react-native-code-push</a></td>
+<td>v5.2.2</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>消息推送</td>
+<td>暂定</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>引导页</td>
+<td>react-native-swiper</td>
+<td><a href="https://github.com/leecade/react-native-swiper">https://github.com/leecade/react-native-swiper</a></td>
+<td>v1.5.13</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>左划菜单</td>
+<td>react-native-swipeout</td>
+<td><a href="https://github.com/dancormier/react-native-swipeout">https://github.com/dancormier/react-native-swipeout</a></td>
+<td>v2.3.3</td>
+<td></td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>相机模块(扫码用)</td>
+<td>react-native-camera</td>
+<td><a href="https://github.com/react-native-community/react-native-camera">https://github.com/react-native-community/react-native-camera</a></td>
+<td>v0.10.0</td>
+<td></td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>二维码扫描</td>
+<td>react-native-qrcode-scanner</td>
+<td><a href="https://github.com/moaazsidat/react-native-qrcode-scanner">https://github.com/moaazsidat/react-native-qrcode-scanner</a></td>
+<td>v0.0.30</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>获取设备信息</td>
+<td>react-native-device-info</td>
+<td><a href="https://github.com/rebeccahughes/react-native-device-info">https://github.com/rebeccahughes/react-native-device-info</a></td>
+<td>v0.17.4</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>数据请求</td>
+<td>frisbee</td>
+<td><a href="https://github.com/niftylettuce/frisbee">https://github.com/niftylettuce/frisbee</a></td>
+<td>v1.6.4</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>提交数据解析</td>
+<td>querystring</td>
+<td><a href="https://github.com/Gozala/querystring">https://github.com/Gozala/querystring</a></td>
+<td>v0.2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>cookies</td>
+<td>react-native-cookies</td>
+<td><a href="https://www.npmjs.com/package/react-native-cookies">https://www.npmjs.com/package/react-native-cookies</a></td>
+<td>v3.2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>浮层</td>
+<td>react-native-root-siblings</td>
+<td><a href="https://github.com/magicismight/react-native-root-siblings">https://github.com/magicismight/react-native-root-siblings</a></td>
+<td>v3.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>toast</td>
+<td>react-native-root-toast</td>
+<td><a href="https://github.com/magicismight/react-native-root-toast">https://github.com/magicismight/react-native-root-toast</a></td>
+<td>v3.0.1</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>日历</td>
+<td>react-native-calendars</td>
+<td><a href="https://github.com/wix/react-native-calendars">https://github.com/wix/react-native-calendars</a></td>
+<td>v1.17.3</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>分享</td>
+<td>暂定</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>即时聊天</td>
+<td>暂定</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>选项卡</td>
+<td>react-native-scrollable-tab-view</td>
+<td><a href="https://github.com/skv-headless/react-native-scrollable-tab-view">https://github.com/skv-headless/react-native-scrollable-tab-view</a></td>
+<td>v0.8.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>二、APP相关账号管理</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>账号</th>
+<th>密码</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>热更新</td>
+<td>doukegithub</td>
+<td>douke123456</td>
+<td>https://github.com/</td>
+</tr>
+<tr>
+<td>消息推送</td>
+<td></td>
+<td></td>
+<td>https://mobile.umeng.com/push</td>
+</tr>
+<tr>
+<td>腾讯云(云通讯)</td>
+<td>179e@179e.com</td>
+<td>Douke@yun</td>
+<td>https://console.cloud.tencent.com/developer</td>
+</tr>
+<tr>
+<td>ios开发者</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>andorid证书</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>三、重命名项目</h3>
+<p>android</p>
+<blockquote>
+<p>•package.json  <br>
+•index.{os}.js  <br>
+•android\settings.gradle  <br>
+•android\app\build.gradle <br>
+•android\app\src\main\java\com{project} <br>
+•android\app\src\main\java\com{project}\MainActivity.java  <br>
+•android\app\src\main\AndroidManifest.xml <br>
+•android\app\src\main\res\values\strings.xml</p>
+</blockquote>
+<p>mac</p>
+<blockquote>
+<p>•package.json  <br>
+•index.{os}.js  <br>
+•ios{project}  <br>
+•ios{project}\Base.lproj\LaunchScreen.xib  <br>
+•ios{project}\appDelegate.m <br>
+•ios{project}.xcodeproj <br>
+•ios{project}.xcodeproj\project.pbxproj  <br>
+•ios{project}.xcodeproj\xcsshareddata\xcschemes{project}.xcscheme  <br>
+•ios{project}Tests  <br>
+•ios{project}Tests{project}Tests.m</p>
+</blockquote>
+<h3>四、添加字体</h3>
+<p>android</p>
+<ol>
+<li>添加字体文件到 android 项目  <br>
+    把字体文件放到 /android/app/src/main/assets/fonts/ 目录下</li>
+<li>使用字体</li>
+</ol>
+<p>mac</p>
+<ol>
+<li>添加字体文件到 Xcode 项目  <br>
+    把字体文件放在 /ios/fonts/ 目录下，点击主项目位置，右键添加新文件(字体文件)到项目   </li>
+<li>确保字体包含在项目中</li>
+<li>检查字体是否以资源文件形式绑定好</li>
+<li>添加自定义字体文件到 plist 文件里面      <br>
+    在主目录里面选择 info.plist，然后打开点击 “Information Property List”, 添加插件标识. 在下拉列表中选择 “Fonts provided by application”. 复制字体文件名称并粘贴到该行的右边栏.</li>
+<li>查找字体名称 (可选)</li>
+<li>使用字体  <br>
+    参考站点(访问需要翻墙) <a href="https://medium.com/@dabit3/adding-custom-fonts-to-react-native-b266b41bff7f#.y0s276ll0">https://medium.com/@dabit3/adding-custom-fonts-to-react-native-b266b41bff7f#.y0s276ll0</a></li>
+</ol>
+<h3>五、应用名及图标修改</h3>
+<p>android</p>
+<p>1.应用ID  <br>
+    1). 修改<code>android/app/build.gradle</code>中的以下内容      </p>
+<div class="codehilite"><pre>    ……
+    android {
+        ……
+        defaultConfig {
+            applicationId &quot;com.myproject&quot;  &lt;-- 就是这行
+            ……
+        }
+        ……
+    }
+</pre></div>
+
+
+<ol>
+<li>
+<p>版本号  <br>
+    在<code>android/app/build.gradle</code>中，versionCode 和versionName两项。versionCode必须每次增加，不能减少。每次发布之前，这两项都要修改    </p>
+</li>
+<li>
+<p>应用名称  <br>
+    在<code>android/app/src/main/res/values/strings.xml</code>中，找到<code>&lt;string name="app_name"&gt;MyProject&lt;/string&gt;</code>，中间的MyProject就是应用名称了。</p>
+</li>
+<li>
+<p>图标
+    在<code>android/app/src/main/res/</code>下，你会看到一系列mipmap开头的文件夹（默认是4个），按照里面ic_launcher.png的尺寸，生成四个版本的icon并替换。</p>
+</li>
+</ol>
+<h3>六、打包发布</h3>
+<p>android</p>
+<ol>
+<li>
+<p>生成签名文件</p>
+<p>生成签名文件</p>
+<blockquote>
+<p>keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000</p>
+</blockquote>
+<p>在运行上面这条语句之后，密钥库里应该已经生成了一个单独的密钥，有效期为10000天。--alias参数后面的别名是你将来为应用签名时所需要用到的，所以记得记录这个别名。</p>
+<p><span style="color:#F00">注：请记得妥善地保管好你的密钥库文件</span></p>
+<p>查看签名文件</p>
+<blockquote>
+<p>keytool -list -v -keystore E:\app\my-release-key.keystore -storepass android</p>
+</blockquote>
+<p>最后一位(android)是密码</p>
+</li>
+<li>
+<p>把<code>my-release-key.keystore</code>文件放到你工程中的<code>android/app</code>文件夹下。</p>
+</li>
+<li>
+<p>编辑<code>~/.gradle/gradle.properties</code>，添加如下的代码（注意把其中的****替换为相应密码）</p>
+<blockquote>
+<p>MYAPP_RELEASE_STORE_FILE=my-release-key.keystore <br>
+MYAPP_RELEASE_KEY_ALIAS=my-key-alias <br>
+MYAPP_RELEASE_STORE_PASSWORD=**** <br>
+MYAPP_RELEASE_KEY_PASSWORD=****   </p>
+</blockquote>
+</li>
+<li>
+<p>编辑你工程目录下的<code>android/app/build.gradle</code>，添加如下的内容：</p>
+<div class="codehilite"><pre>```
+...
+android {
+    ...
+    defaultConfig { ... }
+    signingConfigs {
+        release {
+            storeFile file(MYAPP_RELEASE_STORE_FILE)
+            storePassword MYAPP_RELEASE_STORE_PASSWORD
+            keyAlias MYAPP_RELEASE_KEY_ALIAS
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        release {
+            ...
+            signingConfig signingConfigs.release
+        }
+    }
+}
+...
+```
+</pre></div>
+
+
+</li>
+<li>
+<p>如果你在<code>android/app</code>下有一个<code>react.gradle</code>,只要在终端下运行以下命令：  </p>
+<blockquote>
+<p>cd android &amp;&amp; ./gradlew assembleRelease</p>
+</blockquote>
+</li>
+<li>
+<p>在把发行版本提交到Play Store之前，你应该做一次最终测试。输入以下命令可以在设备上安装发行版本：</p>
+<blockquote>
+<p>cd android &amp;&amp; ./gradlew installRelease</p>
+</blockquote>
+<p>如果打包出错请先执行清除命令</p>
+<blockquote>
+<p>cd android &amp;&amp; ./gradlew clean</p>
+</blockquote>
+</li>
+</ol>
+<p>mac   </p>
+<ol>
+<li>
+<p>打开<code>AwesomeApp/ios/AwesomeApp/AppDelegate.m</code>    </p>
+</li>
+<li>
+<p>取消注释<code>jsCodeLocation = [[NSBundle mainBundle] ...</code>这一行。    </p>
+</li>
+<li>
+<p>根据你的app选择的scheme的不同，会生成不同的离线包（Debug会生成带有警告的开发模式的包，Release则会生成压缩优化过的包）。要修改scheme的话，选择Xcode顶部菜单中的<code>Product &gt; Scheme &gt; Edit Scheme...</code>，在<code>Build Configuration</code>选项中切换选择<code>Debug</code>或是<code>Release</code>。</p>
+</li>
+</ol>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
